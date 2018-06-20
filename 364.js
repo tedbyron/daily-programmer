@@ -8,11 +8,11 @@
 
 /**
  * takes a string input of the form 'NdM' and rolls N M-sided dice
- * @param  {string} input input string
- * @return {string}       sum of rolls and a list of the rolls
+ * @param  {string} inputString input string
+ * @return {string}             sum of rolls and a list of the rolls
  */
-dndRoll = input => {
-  const inputArray = input.split('d')
+function dndRoll(inputString) {
+  const inputArray = inputString.split('d')
 
   let floor = Math.floor(1)
   let ceiling = Math.ceil(parseInt(inputArray[1]))
