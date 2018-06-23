@@ -1,15 +1,12 @@
 /**
  * 2018-06-11
  * #363
- * easy
- * bonus 1
  * check a given word for the grammar rule: I before E, except after C
  */
 
 /**
- * check word for I before E, except after c
  * @param  {string} word word to check
- * @return {boolean}     true if regex test passes
+ * @return {boolean}   true if regex test passes
  */
 function check(word) {
   return !/cie|(?:^|[^c])ei/.test(word)
