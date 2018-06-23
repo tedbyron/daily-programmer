@@ -1,5 +1,4 @@
 /**
- * 2018-06-18
  * #364
  * create a DnD-style dice roller
  */
