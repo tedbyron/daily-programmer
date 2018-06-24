@@ -2,7 +2,7 @@
  * #364
  * Create a Dice Roller
  *
- * create a DnD-style dice roller
+ * Create a DnD-style dice roller
  */
 
 /**
@@ -10,7 +10,7 @@
  * @param  {String} input input string
  * @return {String}       sum of rolls and a list of the rolls
  */
-function dndRoll (input) {
+const dndRoll = input => {
   const [TIMES, SIDES] = input.split('d').map(c => parseInt(c))
   let rolls = []
 
