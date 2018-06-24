@@ -1,12 +1,14 @@
 /**
  * #364
+ * Create a Dice Roller
+ *
  * create a DnD-style dice roller
  */
 
 /**
  * takes a string input of the form 'NdM' and rolls N M-sided dice
- * @param  {string} input input string
- * @return {string}   sum of rolls and a list of the rolls
+ * @param  {String} input input string
+ * @return {String}       sum of rolls and a list of the rolls
  */
 function dndRoll (input) {
   const [TIMES, SIDES] = input.split('d').map(c => parseInt(c))
