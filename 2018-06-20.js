@@ -11,7 +11,7 @@
 /**
  * @param  {number} curr      current n-tuple
  * @param  {number} step = 0  current step in the sequence
- * @param  {object} prev = [] array of previous n-tuples joined as Strings
+ * @param  {array}  prev = [] array of previous n-tuples joined as Strings
  * @return {undefined}        no return, function logs step number and n-tuples
  */
 const ducci = (curr, step = 0, prev = []) => {
