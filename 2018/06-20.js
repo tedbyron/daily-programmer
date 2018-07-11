@@ -15,9 +15,9 @@
  * @return {undefined}        no return, function logs step number and n-tuples
  */
 const ducci = (curr, step = 0, prev = []) => {
-  console.log(`step ${step}: ${curr.join(', ')}`)
+  console.log(`step ${step}: ${curr.join(', ')}`);
   if (curr.some(c => c > 0) && !prev.includes(curr.join(''))) {
-    let next = curr.map((e, i) => Math.abs(e - curr[(i + 1) % curr.length]))
-    ducci(next, ++step, [...prev, curr.join('')])
+    let next = curr.map((e, i) => Math.abs(e - curr[(i + 1) % curr.length]));
+    ducci(next, ++step, [...prev, curr.join('')]);
   }
-}
+};
