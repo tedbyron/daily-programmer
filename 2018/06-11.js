@@ -9,7 +9,7 @@
  * @param  {string} word word to check
  * @return {boolean}     true if regex test passes
  */
-const check = word => !/cie|(?:^|[^c])ei/.test(word)
+const check = word => !/cie|(?:^|[^c])ei/.test(word);
 
 /**
  * @param {string} url url to check words in
@@ -21,4 +21,4 @@ const checkTxtFile = url => {
   		.split(/\s+/)
   		.reduce((t, word) => t + !check(word), 0)
     ))
-}
+};

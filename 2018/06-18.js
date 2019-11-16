@@ -20,4 +20,4 @@ const dndRoll = a => {
 
  let sum = e.reduce((x, y) => x + y)
  return `${sum}: ${e.join(' ')}`
-}
+};
